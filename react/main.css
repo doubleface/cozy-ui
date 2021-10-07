@@ -26736,6 +26736,99 @@ html {
   opacity: 0.64;
 }
 
+.SquareAppIcon-title--2yy0h {
+  max-width: 4.25rem;
+  overflow: hidden;
+  text-align: center;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+@media (max-width: 30rem) {
+  .SquareAppIcon-title--2yy0h {
+    font-size: 0.688rem;
+    line-height: 1rem;
+    margin: 0.25rem 0 0 0;
+    max-width: 3rem;
+  }
+}
+.SquareAppIcon-icon-wrapper--2LcSe {
+  box-sizing: border-box;
+  background-color: var(--white);
+  border-radius: 0.75rem;
+  height: 4rem;
+  position: relative;
+  width: 4rem;
+}
+@media (max-width: 30rem) {
+  .SquareAppIcon-icon-wrapper--2LcSe {
+    height: 3rem;
+    width: 3rem;
+  }
+}
+.SquareAppIcon-icon-wrapper--2LcSe div {
+  padding: 0.625rem;
+  border-radius: 0.75rem;
+  height: calc(4rem - 2 * 0.625rem);
+}
+@media (max-width: 30rem) {
+  .SquareAppIcon-icon-wrapper--2LcSe div {
+    padding: 0.5rem;
+    height: calc(3rem - 2 * 0.5rem);
+  }
+}
+.SquareAppIcon-ghost--g1-TE {
+  background-color: rgba(255,255,255,0.32);
+  border: 1px dashed var(--white);
+}
+@supports not (backdrop-filter: blur(48px)) {
+  .SquareAppIcon-ghost--g1-TE {
+    background-color: rgba(255,255,255,0.48);
+  }
+}
+.SquareAppIcon-ghost--g1-TE div {
+  backdrop-filter: blur(48px);
+  mix-blend-mode: overlay;
+}
+.SquareAppIcon-ghost--g1-TE div svg,
+.SquareAppIcon-ghost--g1-TE div img {
+  filter: saturate(0%);
+}
+.SquareAppIcon-add--3zlpa {
+  background-color: rgba(255,255,255,0.32);
+  border: 1px dashed var(--white);
+}
+@supports not (backdrop-filter: blur(48px)) {
+  .SquareAppIcon-add--3zlpa {
+    background-color: rgba(255,255,255,0.48);
+  }
+}
+.SquareAppIcon-add--3zlpa div {
+  backdrop-filter: blur(48px);
+  mix-blend-mode: normal;
+}
+.SquareAppIcon-add--3zlpa div svg,
+.SquareAppIcon-add--3zlpa div img {
+  height: 1rem;
+  width: 1rem;
+  margin: calc((4rem - 1rem - 0.625rem * 2) / 2);
+}
+@media (max-width: 30rem) {
+  .SquareAppIcon-add--3zlpa div svg,
+  .SquareAppIcon-add--3zlpa div img {
+    margin: calc((3rem - 1rem - 0.5rem * 2) / 2);
+  }
+}
+.SquareAppIcon-maintenance--1IuVc {
+  box-shadow: 0px 0px 0px 0.5px rgba(29,33,42,0.12), 0px 2px 4px rgba(29,33,42,0.079), 0px 4px 16px rgba(29,33,42,0.06);
+}
+.SquareAppIcon-maintenance--1IuVc div {
+  mix-blend-mode: luminosity;
+}
+.SquareAppIcon-maintenance--1IuVc div svg,
+.SquareAppIcon-maintenance--1IuVc div img {
+  opacity: 0.5;
+}
+
 .Sections__section--2onYy {
   margin-bottom: 4rem;
 }
