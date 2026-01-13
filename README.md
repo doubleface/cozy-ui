@@ -60,6 +60,10 @@ The entire library is also available as a good ol’ CSS library. You can simply
 <link media="all" rel="stylesheet" href=“cozy-ui/dist/cozy-ui.min.css" />
 ```
 
+### About tests in your application
+
+If you use `Jest` in your application, you may need add `transformIgnorePatterns: ['node_modules/(?!cozy-ui)']` in the jest config file to avoid parsing errors.
+
 ## Develop on Cozy UI
 
 If you want to develop inside cozy-ui, you need a local version cozy-ui.
@@ -239,6 +243,40 @@ yarn screenshots:server
 ```
 
 See our [travis configuration](https://github.com/cozy/cozy-ui/blob/master/.travis.yml) for more information.
+
+
+### Packages and Dependencies
+
+Cozy-ui relies on many packages to work, but we tend to want it to be more agnostic. So this is the package list and usage:
+
+#### Dependencies
+
+- @date-io/date-fns => DatePicker
+- chart.js => PieChart
+- date-fns => DateMonthPicker, DatePicker, I18n
+- react-markdown => Markdown
+- react-select => SelectBox
+- react-virtuoso => Table/Virtualized, GridList/Virtualized
+- rooks => BottomSheet, Table/Virtualized
+
+#### Dependencies for deprecated components
+
+- @popperjs/core => react-popper => ActionMenu/NotInlineWrapper
+- react-remove-scroll => BottomDrawer, Overlay
+- react-swipeable-views => InfosCarroussel, ViewStack
+
+#### PeerDependencies
+
+- cozy-device-helper [(see peerDeps)](https://github.com/cozy/cozy-libs/blob/master/packages/cozy-device-helper/package.json) => Dialog
+- cozy-intent [(see peerDeps)](https://github.com/cozy/cozy-libs/blob/master/packages/cozy-intent/package.json) => ActionsMenu, Dialog, SelectionBar
+- react-dnd => Table/Virtualized/DnD, GridList/Virtualized/DnD
+- react-dnd-html5-backend => Table/Virtualized/DnD, GridList/Virtualized/DnD
+- twake-i18n => lots of component
+
+#### PeerDependencies for deprecated components
+
+- cozy-device-helper => ActionMenu, Modal
+
 
 ## License
 
