@@ -244,37 +244,39 @@ yarn screenshots:server
 
 See our [travis configuration](https://github.com/cozy/cozy-ui/blob/master/.travis.yml) for more information.
 
+
 ### Packages and Dependencies
 
 Cozy-ui relies on many packages to work, but we tend to want it to be more agnostic. So this is the package list and usage:
 
 #### Dependencies
 
-* @date-io/date-fns => DatePicker
-* chart.js => PieChart
-* date-fns => DateMonthPicker, DatePicker, I18n
-* react-markdown => Markdown
-* react-select => SelectBox
-* react-virtuoso => Table/Virtualized, GridList/Virtualized
-* rooks => BottomSheet, Table/Virtualized
+- @date-io/date-fns => DatePicker
+- chart.js => PieChart
+- date-fns => DateMonthPicker, DatePicker, I18n
+- react-markdown => Markdown
+- react-select => SelectBox
+- react-virtuoso => Table/Virtualized, GridList/Virtualized
+- rooks => BottomSheet, Table/Virtualized
 
 #### Dependencies for deprecated components
 
-* @popperjs/core => react-popper => ActionMenu/NotInlineWrapper
-* react-remove-scroll => BottomDrawer, Overlay
-* react-swipeable-views => InfosCarroussel, ViewStack
+- @popperjs/core => react-popper => ActionMenu/NotInlineWrapper
+- react-remove-scroll => BottomDrawer, Overlay
+- react-swipeable-views => InfosCarroussel, ViewStack
 
 #### PeerDependencies
 
-* cozy-device-helper [(see peerDeps)](https://github.com/cozy/cozy-libs/blob/master/packages/cozy-device-helper/package.json) => Dialog
-* cozy-intent [(see peerDeps)](https://github.com/cozy/cozy-libs/blob/master/packages/cozy-intent/package.json) => ActionsMenu, Dialog, SelectionBar
-* react-dnd => Table/Virtualized/DnD, GridList/Virtualized/DnD
-* react-dnd-html5-backend => Table/Virtualized/DnD, GridList/Virtualized/DnD
-* twake-i18n => lots of component
+- cozy-device-helper [(see peerDeps)](https://github.com/cozy/cozy-libs/blob/master/packages/cozy-device-helper/package.json) => Dialog
+- cozy-intent [(see peerDeps)](https://github.com/cozy/cozy-libs/blob/master/packages/cozy-intent/package.json) => ActionsMenu, Dialog, SelectionBar
+- react-dnd => Table/Virtualized/DnD, GridList/Virtualized/DnD
+- react-dnd-html5-backend => Table/Virtualized/DnD, GridList/Virtualized/DnD
+- twake-i18n => lots of component
 
 #### PeerDependencies for deprecated components
 
-* cozy-device-helper => ActionMenu, Modal
+- cozy-device-helper => ActionMenu, Modal
+
 
 ## License
 
