@@ -34,7 +34,7 @@ yarn add cozy-ui
 If you use the transpiled components (from `cozy-ui/transpiled/react`), you need to import the stylesheet (once):
 
 ```
-import Button from 'cozy-ui/transpiled/react/deprecated/Button'
+import Button from 'cozy-ui/transpiled/react/Buttons'
 import 'cozy-ui/transpiled/react/stylesheet.css'
 
 <Button />
@@ -252,7 +252,6 @@ Cozy-ui relies on many packages to work, but we tend to want it to be more agnos
 #### Dependencies
 
 - @date-io/date-fns => DatePicker
-- chart.js => PieChart
 - date-fns => DateMonthPicker, DatePicker, I18n
 - react-markdown => Markdown
 - react-select => SelectBox
