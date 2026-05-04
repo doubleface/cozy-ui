@@ -6014,29 +6014,6 @@ body {
   fill: inherit;
 }
 
-.divider--SuA5q {
-  align-items: center;
-  display: flex;
-}
-.divider--SuA5q::after,
-.divider--SuA5q::before {
-  content: '';
-  height: 1px;
-  background-color: var(--dividerColor);
-}
-.divider--SuA5q::before {
-  display: none;
-  margin-right: 0.5rem;
-}
-.divider--SuA5q::after {
-  flex: 1;
-  margin-left: 0.5rem;
-}
-.center--3K8dw::before {
-  display: block;
-  flex: 1;
-}
-
 .c-apptitle--eqV9l {
   display: inline-flex;
   align-items: center;
@@ -6069,6 +6046,29 @@ body {
 }
 .Stack--xxl--2KAsb > * + * {
   margin-top: 3rem;
+}
+
+.divider--SuA5q {
+  align-items: center;
+  display: flex;
+}
+.divider--SuA5q::after,
+.divider--SuA5q::before {
+  content: '';
+  height: 1px;
+  background-color: var(--dividerColor);
+}
+.divider--SuA5q::before {
+  display: none;
+  margin-right: 0.5rem;
+}
+.divider--SuA5q::after {
+  flex: 1;
+  margin-left: 0.5rem;
+}
+.center--3K8dw::before {
+  display: block;
+  flex: 1;
 }
 
 .DialogCloseButton--cxKPO {
@@ -6602,10 +6602,10 @@ body {
   content: '';
   position: absolute;
   z-index: var(--zIndex-below);
-  border-radius: 0 8px 8px 0;
+  border-radius: 8px;
   top: 0;
-  left: 1.5rem;
-  right: 1.5rem;
+  left: 1rem;
+  right: 1rem;
   bottom: 0;
   background: var(--actionColorHover);
 }
@@ -6666,7 +6666,7 @@ body {
 .c-nav-link--3mK6W {
   display: flex;
   box-shadow: border-box;
-  margin: 0 1.5rem;
+  margin: 0 1rem;
   padding-left: 0.5rem;
   padding-right: 0.5rem;
   line-height: 1.375;
@@ -6682,7 +6682,7 @@ body {
   color: var(--actionColorActive);
 }
 .c-nav-link--3mK6W.is-active--2D0jN {
-  background-color: var(--primaryColorLightest);
+  background-color: var(--actionColorSelected);
   border-radius: 8px;
   font-weight: bold;
   color: var(--primaryColor);
@@ -6705,6 +6705,7 @@ body {
   .c-nav-link--3mK6W {
     display: block;
     height: auto;
+    margin: 0;
     padding: 0;
     text-align: center;
     font-size: 0.688rem;
@@ -6732,7 +6733,7 @@ body {
   content: '';
   position: absolute;
   z-index: var(--zIndex-below);
-  border-radius: 8px 0 0 8px;
+  border-radius: 8px;
   top: 0;
   right: 0;
   left: 2.813rem;
@@ -6747,7 +6748,7 @@ body {
 .c-nav-item-secondary--k14rf .c-nav-link--3mK6W {
   padding: 8px 16px;
   margin-left: 2.8rem;
-  border-radius: 8px 0 0 8px;
+  border-radius: 8px;
   box-shadow: none;
   font-size: 0.875rem;
   color: var(--primaryTextColor);
